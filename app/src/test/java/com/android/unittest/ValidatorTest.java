@@ -42,14 +42,14 @@ public class ValidatorTest {
     @Test
     public void WhenAllInputValid()
     {
-        boolean result =Validator.validateInput("abc","123abcd8");
+        boolean result =Validator.validateInput("pqr","123abcd8");
         assertEquals(true,result);
     }
 
     @Test
     public void WhenExsitingUser()
     {
-        boolean result =Validator.validateInput("pqr","123abcd8");
+        boolean result =Validator.validateInput("abc","123abcd8");
         assertEquals(false,result);
     }
 
